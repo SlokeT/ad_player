@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image"; 
 interface ImageAdProps {
   url: string;
 }
@@ -21,7 +19,7 @@ export default function AdView({ url }: ImageAdProps) {
     <div className="flex gap-4 p-8 h-screen">
       {/* Image View */}
       <div className="flex-3 w-3/4 h-full relative">
-        <Image
+        <img
           src={url}
           alt="Ad"
           className="w-full h-full object-contain" // aspect ratio match
